@@ -1,55 +1,21 @@
-# Agentic AI Crash Course
+# GenAI Learning Journey
 
-A small collection of example code and notebooks in my journey of learning Generative AI and Agentic AI
+This repo is my personal **GenAI learning journey**—small experiments and working notes as I go.
 
-## Contents
+## Days
 
-- `main.py` — project entry point / example runner
-- `01_llm_call/call_llm.ipynb` — Jupyter notebook with LLM examples
-- `pyproject.toml` — project metadata and dependencies
+- **Day 1:** First LLM call (`01_llm_call/call_llm.ipynb`)
+- **Day 2:** Mini blood work analysis (`02_health_analysis/` + Streamlit app)
+- **Day 3:** Vector databases (`03_vector_database/`)
 
-## Requirements
+## How to run
 
-- Python 3.14 or newer
-- Recommended: a virtual environment (venv, virtualenv, or Poetry)
+Start with `main.py`:
 
-## Setup
-
-Using Poetry (recommended if installed):
-
-```
-poetry install
-```
-
-If you prefer pip, export a `requirements.txt` from Poetry then install:
-
-```
-poetry export -f requirements.txt --without-hashes -o requirements.txt
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1    # PowerShell
-# or .venv\Scripts\activate.bat   # cmd.exe
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-If you don't use Poetry, you can manually create a venv and install the dependencies listed in `pyproject.toml`.
-
-## Quick Start
-
-Run the example script:
-
-```
+```bash
 python main.py
 ```
 
-Open and run the notebook:
+Or open the notebooks in your Jupyter environment.
 
-```
-jupyter notebook 01_llm_call/call_llm.ipynb
-```
-
-## Notes
-
-- Dependencies are declared in `pyproject.toml`. See that file for exact package versions.
-- This repo is intended for learning and experimentation; not production-ready.
 
